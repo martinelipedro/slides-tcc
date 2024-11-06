@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Introdução}{3}{0}{1}
+\beamer@sectionintoc {2}{Funções $(\alpha , \lambda )$-limitadas}{4}{0}{2}
+\beamer@sectionintoc {3}{Resultados nas \textit {matrizes de toeplitz}}{4}{0}{3}
+\beamer@sectionintoc {4}{Working with Texts}{4}{0}{4}
+\beamer@sectionintoc {5}{Two Columns and Equations}{8}{0}{5}
+\beamer@sectionintoc {6}{Subfigures and Tables}{11}{0}{6}

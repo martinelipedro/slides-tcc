@@ -1,0 +1,182 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+
+%-------------------------Packages------------------------
+\usepackage[utf8]{inputenc}
+\usepackage{subcaption}
+\usepackage{amsmath}
+%---------------------------------------------------------
+% -----------Define theme and color scheme----------------
+
+\usetheme[sidebarleft]{IIST} 
+\usepackage{xcolor}
+
+\setbeamercolor{title}{fg=black}
+\setbeamertemplate{footline}{}
+\logo{\includegraphics[height=1.5cm]{figures/logo.png}}
+
+
+% ---------Information on the title page------------------
+\title[$k$-limitadas] {Contagem de funções $k$-limitadas em $[n]$}
+\author[] {Tiago Trindade \and Pedro Martineli}
+\institute[IAL] {Instituto Alpha Lumen}
+\date[Novembro, 2024]{26 de novembro de 2024}
+%------------------------------------------------------------
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the beginning of each section and highlights the current section:
+
+% \AtBeginSection[]
+% {
+%   \begin{frame}
+%     \frametitle{Table of Contents}
+%     \tableofcontents[currentsection]
+%   \end{frame}
+% }
+%------------------------------------------------------------
+
+\begin{document}
+
+\frame{\titlepage}  % Creates title page
+
+%--------table of contents after title page---------------
+\begin{frame}
+\frametitle{Conteúdo}
+\tableofcontents
+\end{frame}
+%---------------------------------------------------------
+
+\section{Introdução}
+
+\begin{frame}
+\frametitle{Funções}
+\end{frame}
+
+\section{Funções $(\alpha, \lambda)$-limitadas}
+\section{Resultados nas \textit{matrizes de toeplitz}}
+
+\section{Working with Texts}
+
+%---------------------------------------------------------
+%Changing visivility of the text
+\begin{frame}
+\frametitle{Slide 1}
+Some itemized text...
+
+\begin{itemize}
+    \item<1-> First line comes first. 
+    \item<2-> Second line joins the first in next slide.
+    \item<3-> Third line joins the rest in next slide.
+\end{itemize}
+
+\end{frame}
+
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+%Highlighting text
+\begin{frame}
+  \frametitle{Types of Blocks}
+  
+  This is a brief introduction of \alert{Blocks}.
+  
+  \begin{block}{Definition}
+  A simple definition block.
+  \end{block}
+  
+  \begin{alertblock}{Alert}
+  A simple alert block.
+  \end{alertblock}
+  
+  \begin{examples}
+  A simple example block.
+  \end{examples}
+\end{frame}
+%---------------------------------------------------------
+
+
+
+\section{Two Columns and Equations}
+%---------------------------------------------------------
+%Two columns
+\begin{frame}
+\frametitle{Two Columns with Footnote and Image}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+Indian Institute of Space Science and Technology (IIST), situated at Thiruvananthapuram is a Deemed to be University under Section 3 of the UGC Act 1956. IIST functions as an autonomous body under the Department of Space, Government of India \footnotemark[1]. 
+
+\column{0.5\textwidth}
+\begin{figure}
+  \includegraphics[width=0.8\textwidth]{figures/Indian_Institute_of_Space_Science_and_Technology_Logo.png}
+  \caption{IIST Logo}
+  \label{fig:iistlogo}
+\end{figure}
+\end{columns}
+\footnotetext[1]{https://www.iist.ac.in/aboutus/institute}
+\end{frame}
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+%Equations
+\begin{frame}
+  \frametitle{Frame with a sample equation}
+  This slide is to test mathematical formulas \pause
+  \begin{equation}
+    \begin{gathered}
+        \nabla \cdot \vec{u}\, = \,0,\\
+        \rho\left(\frac{\partial\vec{u}}{\partial t} \,+\,\vec{u} \cdot \nabla \vec{u}\right)\, =\, -\, \nabla P\, + \,\mu \,\nabla^2 \vec{u}\, +\, \rho\vec{f}
+    \end{gathered}
+  \end{equation}
+\end{frame}
+%---------------------------------------------------------
+
+
+\section{Subfigures and Tables}
+%---------------------------------------------------------
+%Subfigures
+\begin{frame}
+  \frametitle{Use of Subfigures}
+  \begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.35\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{figures/Indian_Institute_of_Space_Science_and_Technology_Logo.png}
+      \caption{1st Image}
+      \label{fig:img1}
+    \end{subfigure}
+    \hspace{0.3cm}
+    \begin{subfigure}[b]{0.35\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{figures/Indian_Institute_of_Space_Science_and_Technology_Logo.png}
+      \caption{2nd Image}
+      \label{fig:img2}
+    \end{subfigure}
+  \end{figure}
+\end{frame}
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+%Tables
+\begin{frame}
+  \frametitle{Use of Tables}
+  \begin{table}
+    \centering
+    \begin{tabular}{||c|c|c||}
+      \hline
+      \textbf{Heading 1} & \textbf{Heading 2} & \textbf{Heading 3}\\
+      \hline
+      Text & Text & Text \\
+      \hline
+      Text & Text & Text \\
+      \hline
+      Text & Text & Text \\
+      \hline
+    \end{tabular}
+    \caption{Sample Table}
+
+  \end{table}
+\end{frame}
+%---------------------------------------------------------
+\end{document}
